@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="4dp"
+    >
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="3dp"
+
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/fruta_foto"
+
+                android:layout_alignParentTop="true"
+
+                android:src="@drawable/nofruit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fruta_nome"
+                android:singleLine="true"
+                android:layout_below="@+id/fruta_foto"
+                android:layout_alignParentTop="true"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/fruta_epoca"
+                android:layout_below="@+id/fruta_nome"
+
+                android:textColor="#6ba4b5"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fruta_epoca_media"
+                android:layout_below="@+id/fruta_epoca"
+                android:singleLine="true"
+                android:textColor="#adb563"
+                android:textSize="8sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fruta_fora_epoca"
+                android:layout_below="@+id/fruta_epoca_media"
+                android:singleLine="true"
+                android:textColor="#af514c"
+                android:textSize="8sp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
